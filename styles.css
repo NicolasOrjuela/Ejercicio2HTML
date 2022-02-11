@@ -1,0 +1,41 @@
+body{
+    background-color:#010b12 !important;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+#contenedor1{
+    background-color: #0e0f10 !important;
+}
+
+h1{
+    font-weight: bold !important;
+}
+
+#barranav{
+    background-color: #1e1f21 !important;
+}
+
+#contenedor2{
+    background-color:#010b12 !important;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+#image {
+    width: 2.5rem; 
+    height: 2.5rem;
+    object-fit: cover;
+}
+
+#profile {
+    width: 8rem; 
+    height: 8rem;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+#personal {
+    width: 15rem; 
+    height: 15rem;
+    object-fit: cover;
+
+}

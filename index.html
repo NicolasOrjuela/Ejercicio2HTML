@@ -4,71 +4,155 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <title>Nicolás Orjuela</title>
 </head>
 <body>
-    <header>
-        <table>
-            <tr><td><img src="./img/foto1.jpg" alt="Foto personal" width="200px"></td>
-            <td><h1 id="encabezado">Nicolás Orjuela</h1></td></tr>
-        </table>
-    </header>
-    <nav>
-        <a href="#encabezado">Encabezado</a>
-        <a href="#datosBiograficos">Datos Biográficos</a>
-        <a href="#datosAcademicos">Datos Académicos</a>
-        <a href="#intereses">Intereses</a>
-        <a href="#contacto">Contacto</a>
-        <a href="#footer">Footer</a>
+    <div class="container-fluid bg-dark text-white" id="contenedor1">
+        <div class="container">
+            <header id="banner">
+                <div class="d-flex align-items-center p-3">
+                    <div class="flex-shrink-0">
+                        <img class="img-fluid" id="profile" src="./img/photo1.jpg" alt="Personal photo">
+                    </div>
+                    <div class="flex-grow-1 ms-3">
+                        <h1 class="text-sm-left">Nicolás Orjuela</h1>
+                    </div>
+                  </div>
+            </header>
+        </div>
+        
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="barranav">
+        <div class="container-fluid" id="barranav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                    <li class="nav-item">
+                        <h4><a class="nav-link" href="#banner">Banner</a></h4>
+                    </li>
+                    <li class="nav-item">
+                        <h4><a class="nav-link" href="#whoami">Who Am I</a></h4>
+                    </li>
+                    <li class="nav-item">
+                        <h4><a class="nav-link" href="#projects">Projects</a></h4>
+                    </li>
+                    <li class="nav-item">
+                        <h4><a class="nav-link" href="#hobbies">Hobbies</a></h4>
+                    </li>
+                    <li class="nav-item">
+                        <h4><a class="nav-link" href="#academicinfo">Academic Info</a></h4>
+                    </li>
+                    <li class="nav-item">
+                        <h4><a class="nav-link" href="#footer">Footer</a></h4>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
-    <main>
+       
+    <div class="container bg-dark text-white" id="contenedor2">
+        <div class="container">
 
-        <h2 id="datosBiograficos">Datos Biográficos</h2>
-        <table>
-            <tr><td>Hola! Soy Nicolás, tengo 20 años y soy de Bogotá.</td></tr>
-            <tr><td>Soy estudiante de ingeniería de sistemas de la Universidad de los Andes y voy en 6o semestre.</td></tr>
-            <tr><td>He vivido toda mi vida en Bogotá con mi familia: vivo con mis papás y con mi hermana.</td></tr>
-            <tr><td>Siempre me ha gustado apreciar y entender la tecnología que nos rodea, por lo que estoy estudiando ingeniería de sistemas.</td></tr>
-        </table>
+            <main>
+                <div class="row">
+                    <div class="col-md-12 col-lg-12 col-sm-12">
+                        <h2 class="p-1 mt-4" id="whoami">Who Am I</h2>
+                        <p class="p-2">Hello there! I'm Nicolás, I'm 20 years old and I'm from Bogotá.
+                        I've lived all my life in Bogotá with my family (my parents and my sister).
+                        I'm currently on my sixth semester studying Systems engineering at the Universidad de Los Andes.
+                        I'm studying Systems engineering because I've always loved appreciating and understanding the technology that surrounds us.
+                        You can contact me through this email: <a href="mailto:n.orjuela@uniandes.edu.co">n.orjuela@uniandes.edu.co</a></p>
+                        
+                        <div class="d-flex justify-content-center">
+                            <div class="mx-2"><a href="https://github.com/NicolasOrjuela" target="_blank"><img id="image" class="img-fluid" src="./img/github.png" alt="github"></a></div>
+                            <div class="mx-2"><a href="https://www.instagram.com/cristiano/?hl=en" target="_blank"><img id="image" class="img-fluid" src="./img/instagram.png" alt="instagram"></a></div>
+                            <div class="mx-2"><a href="https://www.youtube.com/c/MrBeast6000" target="_blank"><img id="image" class="img-fluid" src="./img/youtube.png" alt="youtube"></a></div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <div class="col-md-12 col-lg-12 col-sm-12">
+                        <h2 class="p-1" id="projects">Projects</h2>
+                        <p class="p-2">As of today, I've only been part in the projects from University classes:</p>
+                        <ul > 
+                            <li class="py-1">PatrocinAlpes in Team Software Development</li>
+                            <li class="py-1">Stigmergy in Software Architecture and Design</li>
+                        </ul>
+                    </div>
+                </div>
 
-        <h2 id="datosAcademicos">Datos Académicos</h2>
-        <ul>
-            <li>Bachiller del Liceo de Cervantes Norte</li>
-            <li>Bachiller de Sir Robert Borden High School (Bachillerato Internacional)</li>
-            <li>Estudiante de sexto semestre de ingeniería de sistemas de la Universidad de los Andes</li>
-        </ul>
+                <div class="row">
+                    <div class="col-md-12 col-lg-12 col-sm-12">
+                        <h2 class="p-1" id="hobbies">Hobbies</h2>
+                        <ul>
+                            <li class="py-3">I've always liked listening to music, my favorite artists of all time are The Beatles and Vampire Weekend, 
+                                but depending on the week or day, I'm  listening to different artists on repeat
+                            </li>
+                            <div class="d-flex justify-content-center">
+                                <audio class="mx-2" controls>
+                                    <source src="./audio/beatles.mp3" type="audio/mpeg">
+                                    Your browser does not support the audio element.
+                                </audio>
+                                <audio class="mx-2" controls>
+                                    <source src="./audio/vampireweekend.mp3" type="audio/mpeg">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </div>
+                            
+                            <li class="py-3">Additionally, I know how to play bass, guitar and piano, instruments I like to play in my free time</li>
+                            <div class="d-flex justify-content-center">
+                                <img id="personal" src="./img/photo2.jpg" alt="Personal photo 2" width="300px">
+                            </div>
+                            <li class="py-3">I also watch a lot of movies and TV shows in my free time, right now my favorite TV show airing is Succession</li>
+                            <div class="d-flex justify-content-center">
+                                <div class="row">
+                                    <div class="col-sm-6 col-md-6 co-lg-6">
+                                        <div class="embed-responsive embed-responsive-16by9">
+                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bPCJJMEYXRI" frameborder="0" title="succession2"></iframe>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 col-md-6 co-lg-6">
+                                        <div class="embed-responsive embed-responsive-16by9"> 
+                                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/e0mEtTB5gDE" frameborder="0" title="succession1"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <div class="col-md-12 col-lg-12 col-sm-12">
+                        <h2 class="p-1" id="academicinfo">Academic Info</h2>
+                        <ul>
+                            <li>Liceo de Cervantes Norte graduate</li>
+                            <li>Sir Robert Borden High School graduate (International Baccalaureate)</li>
+                            <li>Sixth-semester Systems engineering student at Universidad de los Andes</li>
+                        </ul>
+                    </div>
+                </div>
+            </main>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <footer id="footer">
+                        <p>Made by Nicolás Orjuela. Copyright 2022.</a></p>
+                    </footer>
+                </div>
+            </div>
+        </div>
 
-        <h2 id="intereses">Intereses</h2>
-        <ul>
-            <li>Me gusta escuchar música, en estos momentos he estado escuchando bastante música clásica, especialmente de este tipo:</li>
-            <iframe src="https://www.youtube.com/embed/Oh-o3udImy8" frameborder="0" title="piano" 
-            height="250px" width="443px"></iframe>
-            <iframe src="https://www.youtube.com/embed/1HBappnahHw" frameborder="0" title="chair" 
-            height="250px" width="443px"></iframe>
-            <li>También me gusta ver muchas peliculas y series, durante la pandemia estuve viendo bastantes comedias como estas:</li>
-            <iframe src="https://www.youtube.com/embed/AhxH6Lgsklg" frameborder="0" title="lawyer" 
-            height="250px" width="443px"></iframe>
-            <iframe src="https://www.youtube.com/embed/qHctF2uTPxg" frameborder="0" title="lawyer" 
-            height="250px" width="443px"></iframe>
-            <li>Además, se tocar piano, bajo y guitarra</li>
-            <img src="./img/foto2.jpg" alt="Foto personal 2" width="300px">
-        </ul>
 
-        <h2 id="contacto">Contacto</h2>
-        <form>
-            <label for="nombre">Nombre(s): </label>
-            <input type="text" id="nombre" name="nombre"><br><br>
-            <label for="nombre">Apellido(s): </label>
-            <input type="text" id="nombre" name="apellido"><br><br>
-            <label for="nombre">Correo: </label>
-            <input type="text" id="nombre" name="correo"><br><br>
-            <label for="nombre">Mensaje: </label>
-            <input type="text" id="nombre" name="mensaje"><br><br>
-            <input type="button" value="Enviar">
-        </form>
-    </main>
-    <footer id="footer">
-        <p>Me pueden contactar a través de este correo: <a href="mailto:n.orjuela@uniandes.edu.co">n.orjuela@uniandes.edu.co</a></p>
-    </footer>
+    </div>
 </body>
 </html>
